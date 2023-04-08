@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="all">
+     
+  <header class="header">
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="logotype">
+    </a>
+     <nav>
+      <ul class="menu">
+        <li class="menu_list"><a class="menu_link menu_link_active" href="index.html">Главная</a></li>
+        <li class="menu_list"><a class="menu_link" href="students.html">Студенты</a></li>
+        <li class="menu_list"><a class="menu_link" href="about.html">О курсе</a></li>
+        <li class="menu_list"><a class="menu_link" href="contacts.html">Контакты</a></li>
+      </ul>
+     </nav>
+       <a class="button" href="#">Войти</a>
+    </header>
+      <main class="main">
+        <div class="block">
+          <h1 class="title">Виктор Цой</h1>
+          <img src="img/kino.jpg" alt="Ви́ктор Цой">
+          <div class="subtitle">
+            <p class="text"> <strong>Ви́ктор Ро́бертович Цой</strong> (21 июня 1962, Ленинград, СССР — 15 августа 1990, 35-й километр трассы Р-126 «Слока—Талси», Тукумский район, Латвия) — советский рок-музыкант, автор песен, поэт, художник и киноактёр корейско-русского происхождения. Основатель и лидер рок-группы «Кино», входившей в «Ленинградский рок-клуб» и изначально имевшей название «Гарин и Гиперболоиды»; до этого являлся участником групп «Палата № 6» и «Автоматические удовлетворители». Один из самых влиятельных и известных советских рок-музыкантов; Цой сам писал все тексты и исполнял все песни на концертах группы «Кино», распавшейся после его смерти.</p>
+            <p class="text">Первый альбом группы «Кино» вышел в 1982 году. Всего группа выпустила за период своего существования 8 альбомов; последний вышел уже после смерти лидера группы. Состав группы, при записи первого альбома состоявший только из Виктора Цоя и Алексея Рыбина, изменялся несколько раз и окончательно сложился к 1985 году; в него, кроме Цоя, вошли Юрий Каспарян, Георгий Гурьянов и Игорь Тихомиров.</p>
+            <p class="text">Помимо музыкальной деятельности, Цой снялся в восьми кинофильмах. После исполнения роли Моро в фильме «Игла» журнал «Советский экран» назвал Цоя лучшим актёром 1989 года.</p>
+            <p class="text">15 августа 1990 года Виктор Цой погиб в автокатастрофе на 35-м километре автодороги Р-126 «Слока—Талси» в Тукумском районе Латвии. Согласно официальной версии гибели, он заснул за рулём[источник?]. Похоронен на Богословском кладбище Ленинграда[⇨]. Считается[кем?], что смерть Цоя положительно повлияла на его популярность. Группа породила так называемый феномен «киномании»; сегодня творчество Цоя не утратило среди современных слушателей значимости и популярности</p>
+          </div>
+          <div class="top">
+            <h2 class="title_new">О себе</h2>
+              <form action="#">
+                <input class="input" type="text" placeholder="Фамилия">
+                <input class="input" type="text" placeholder="Имя">
+                <input class="input" type="email" placeholder="Почта">
+                <button class="btn">Отправать</button>
+              </form>
+           </div>
+        </div>
+      </main>
+  </div>
+       <footer class="select">
+    <p class="select_text">2023 &copy; <a class="centr" href="#">учебный центр</a> </p>
+  </footer>
+  <div class="window_content">
+    <div class="window">
+     <form action="#">
+       <h4 class="row">Войти на сайт</h4>
+       <input class="login" type="text" placeholder="Логин">
+       <input class="password" type="text" placeholder="Пароль">
+       <a class="entrance" href="#">Войти</a>
+       <img class="cross" src="img/cross2.jpg" alt="крестик">
+     </form>
+    </div>
+  </div>
+
+       
+    <script>
+    
+      const window_contentEl = document.querySelector('.window_content');
+      const buttonEl = document.querySelector('.button');
+      const crossEl = document.querySelector('.cross');
+      buttonEl.addEventListener('click', function (e) {
+        window_contentEl.classList.toggle('visible');
+      });
+      crossEl.addEventListener('click', function (e) {
+        window_contentEl.classList.remove('visible');
+      });
+   
+    </script>
+</body>
+</html>
